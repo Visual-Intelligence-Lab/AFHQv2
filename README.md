@@ -26,6 +26,7 @@ find "$(pwd)/data/train" -name "*.png" > train.txt
 find "$(pwd)/data/val" -name "*.png" > val.txt
 find "$(pwd)/data/test" -name "*.png" > test.txt
 ```
+
 ### Ciatation
 """
 StarGAN v2
