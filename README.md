@@ -1,11 +1,9 @@
-1. 
-
+1. Download Animal Face High Quality v2
 ```
 bash download.sh afhq-v2-dataset
 ```
 
-2.
-
+2. Split test to make val
 ```
 for d in data/test/*; do
   if [ -d "$d" ]; then
@@ -20,14 +18,14 @@ for d in data/test/*; do
 done
 ```
 
-3.
+3. Create txt files for dataloader
 ```
 find "$(pwd)/data/train" -name "*.png" > train.txt
 find "$(pwd)/data/val" -name "*.png" > val.txt
 find "$(pwd)/data/test" -name "*.png" > test.txt
 ```
 
-### Ciatation
+### Citation
 ```
 StarGAN v2
 Copyright (c) 2020-present NAVER Corp.
